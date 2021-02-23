@@ -10182,8 +10182,9 @@ th {
 /*============= Baloo Footer ===================*/
 
 .baloo_ft {
+  text-align: center;
   background-color: #000;
-  font-size: 15px;
+  font-size: 17px;
   position: fixed;
   bottom: 0px;
     left: 0px;
@@ -10193,4 +10194,13 @@ th {
 
 .baloo_cwp {
   background-color: var(--gray-dark);
+}
+
+.baloo_lnk {
+  color: white;
+}
+
+.baloo_lnk:hover {
+  text-decoration: none;
+  color: peachpuff;
 }
