@@ -153,6 +153,7 @@
                 }, false);
                 //]]>
             }
+<<<<<<< HEAD
             hookGeo();
         })()
     </script>
@@ -164,6 +165,56 @@
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23019901-1"></script>
     <script>
+=======
+          }
+        }
+        return instantiate(_Blob, args); // arguments?
+      }
+  
+      // Copy props and methods
+      let propNames = Object.getOwnPropertyNames(_Blob);
+      for (let i = 0; i < propNames.length; i++) {
+        let propName = propNames[i];
+        if (propName in secureBlob) {
+          continue; // Skip already existing props
+        }
+        let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+        Object.defineProperty(secureBlob, propName, desc);
+      }
+  
+      secureBlob.prototype = _Blob.prototype;
+      return secureBlob;
+    }(Blob);
+  
+    window.addEventListener('message', function (event) {
+      if (event.source !== window) {
+        return;
+      }
+      const message = event.data;
+      switch (message.method) {
+        case 'updateLocation':
+          if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+            hookedObj.genLat = message.info.coords.lat;
+            hookedObj.genLon = message.info.coords.lon;
+            hookedObj.fakeGeo = message.info.fakeIt;
+          }
+          break;
+        default:
+          break;
+      }
+    }, false);
+    //]]>
+  }hookGeo();})()
+  </script>
+      <meta charset="utf-8">
+      <title>Bootswatch: Lux</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style.min.css">
+      <!-- Global Site Tag (gtag.js) - Google Analytics -->
+      <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23019901-1"></script>
+      <script>
+>>>>>>> presentation_elements
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
