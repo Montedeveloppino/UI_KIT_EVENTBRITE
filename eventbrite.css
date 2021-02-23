@@ -15,7 +15,7 @@
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
- :root {
+:root {
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -53,6 +53,7 @@
 }
 
 html {
+    overflow-x: hidden;
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -356,7 +357,7 @@ progress {
     -webkit-appearance: none;
 }
 
- ::-webkit-file-upload-button {
+::-webkit-file-upload-button {
     font: inherit;
     -webkit-appearance: button;
 }
@@ -4929,7 +4930,6 @@ input[type="button"].btn-block {
 }
 
 .card {
-    position: relative;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -5035,7 +5035,8 @@ input[type="button"].btn-block {
 }
 
 .card-deck .card {
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-left: 50px;
 }
 
 @media (min-width: 576px) {
@@ -5052,7 +5053,7 @@ input[type="button"].btn-block {
         flex: 1 0 0%;
         margin-right: 15px;
         margin-bottom: 0;
-        margin-left: 15px;
+        margin-left: 30px;
     }
 }
 
@@ -10542,11 +10543,70 @@ th {
     color: inherit;
 }
 
+body {
+    background-color: #f7f6f6
+}
 
-/*Adding CSS TO FORM**/
+.cards {
+    border: none;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    border-radius: 4px
+}
 
+.dots {
+    height: 4px;
+    width: 4px;
+    margin-bottom: 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block
+}
 
-/*Adding CSS TO FORM**/
+.badge {
+    padding: 7px;
+    padding-right: 9px;
+    padding-left: 16px;
+    box-shadow: 5px 6px 6px 2px #e9ecef
+}
+
+.user-img {
+    margin-top: 4px
+}
+
+.check-icon {
+    font-size: 17px;
+    color: #c3bfbf;
+    top: 1px;
+    position: relative;
+    margin-left: 3px
+}
+
+.form-check-inputs {
+    margin-top: 6px;
+    margin-left: -24px !important;
+    cursor: pointer
+}
+
+.form-check-inputs:focus {
+    box-shadow: none
+}
+
+.icons i {
+    margin-left: 8px
+}
+
+.reply {
+    margin-left: 12px
+}
+
+.reply small {
+    color: #b7b4b4
+}
+
+.reply small:hover {
+    color: green;
+    cursor: pointer
+}
 
 
 /*Adding CSS TO FORM**/
@@ -10612,7 +10672,36 @@ th {
     color: #ffffff;
 }
 
+<<<<<<< HEAD
 .btn-black {
     background-color: #000 !important;
     color: #fff;
+=======
+
+/**************************/
+/*       ajout LX         */
+/**************************/
+
+.position-relative.gradient-overlay-half-dark-v2.bg-img-hero {}
+
+.gradient-overlay-half-dark-v2::before {
+  background-image: linear-gradient(0deg, rgba(21, 27, 38, 0.6) 0%, transparent 100%);
+  background-repeat: repeat-x;
+}
+.bg-img-hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.bg-img-hero-bottom {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.bg-img-hero-center {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+>>>>>>> banner
 }
