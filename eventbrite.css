@@ -10180,3 +10180,11 @@ th {
   color: inherit;
 }
 
+.all_column{
+  margin: 30px;
+  justify-content: center;
+}
+
+.btn-grid{
+  width: 400px;
+}
