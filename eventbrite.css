@@ -50,6 +50,7 @@
 }
 
 html {
+  overflow-x: hidden;
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -4654,7 +4655,6 @@ input[type="button"].btn-block {
 }
 
 .card {
-  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -4760,7 +4760,8 @@ input[type="button"].btn-block {
 }
 
 .card-deck .card {
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-left: 50px;
 }
 
 @media (min-width: 576px) {
@@ -4777,7 +4778,7 @@ input[type="button"].btn-block {
     flex: 1 0 0%;
     margin-right: 15px;
     margin-bottom: 0;
-    margin-left: 15px;
+    margin-left: 30px;
   }
 }
 
@@ -10178,3 +10179,4 @@ th {
 .card-title, .card-header {
   color: inherit;
 }
+
